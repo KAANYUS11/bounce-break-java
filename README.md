@@ -2,7 +2,7 @@
 
 A small desktop arcade game built in Java with Princeton's `StdDraw` library. The player launches a ball, controls a paddle, breaks a brick layout, and tries to clear the board without letting the ball fall below the paddle.
 
-This project started as a university Java assignment and was cleaned up into a public, recruiter-friendly repository with a Maven build, explicit dependency management, and a clearer project structure.
+This project was originally developed for CMPE 160 - Introduction to Object-Oriented Programming and was later cleaned up into a public repository with a Maven build, explicit dependency management, and a clearer project structure.
 
 ## Highlights
 
@@ -63,4 +63,3 @@ mvn exec:java
 ## Implementation Notes
 
 The game loop separates input handling, physics updates, and rendering. Collision detection uses circle-rectangle intersection checks for the paddle and bricks, then reflects the ball using the collision normal. Paddle hits also adjust the outgoing angle based on where the ball lands on the paddle, which gives the player more control over the next shot.
-
