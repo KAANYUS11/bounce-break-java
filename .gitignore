@@ -1,0 +1,17 @@
+# Java / Maven
+target/
+*.class
+*.jar
+!lib/algs4.jar
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local coursework backup, not part of the public GitHub project
+_archive/

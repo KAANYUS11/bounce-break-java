@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.kaanuz</groupId>
+    <artifactId>bounce-break-java</artifactId>
+    <version>1.0.0</version>
+
+    <name>Bounce Break Java</name>
+    <description>A Java brick-breaker arcade game built with StdDraw.</description>
+
+    <properties>
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>edu.princeton.cs</groupId>
+            <artifactId>algs4</artifactId>
+            <version>official-2026-01-10</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/algs4.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <mainClass>io.github.kaanuz.bouncebreak.BounceBreakGame</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
