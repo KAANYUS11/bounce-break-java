@@ -22,7 +22,7 @@ This project was originally developed for CMPE 160 - Introduction to Object-Orie
 - Keyboard-driven user interaction
 - State management for launch, pause, victory, game-over, and restart flows
 - Maven project setup and dependency handling
-- Code cleanup and refactoring from an assignment script into a maintainable project structure
+
 
 ## Tech Stack
 
