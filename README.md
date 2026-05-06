@@ -13,6 +13,17 @@ This project started as a university Java assignment and was cleaned up into a p
 - Simple rendering loop using `StdDraw`
 - Maven project layout for easy cloning and running
 
+## Skills Gained
+
+- Java fundamentals: classes, methods, constants, arrays, records, and control flow
+- Game loop design with separate input, update, and render steps
+- 2D collision detection between circles and rectangles
+- Vector math for ball reflection and angle-based movement
+- Keyboard-driven user interaction
+- State management for launch, pause, victory, game-over, and restart flows
+- Maven project setup and dependency handling
+- Code cleanup and refactoring from an assignment script into a maintainable project structure
+
 ## Tech Stack
 
 - Java 17+
@@ -38,7 +49,6 @@ mvn compile
 mvn exec:java
 ```
 
-The `StdDraw` dependency is included as `lib/algs4.jar` from Princeton's official Algorithms library, so no separate classpath setup is required.
 
 ## Project Structure
 
@@ -46,32 +56,11 @@ The `StdDraw` dependency is included as `lib/algs4.jar` from Princeton's officia
 .
 ├── pom.xml
 ├── README.md
-└── src
-    └── main
-        └── java
-            └── io
-                └── github
-                    └── kaanuz
-                        └── bouncebreak
-                            └── BounceBreakGame.java
+├── lib/algs4.jar
+└── src/main/java/io/github/kaanuz/bouncebreak/BounceBreakGame.java
 ```
 
 ## Implementation Notes
 
 The game loop separates input handling, physics updates, and rendering. Collision detection uses circle-rectangle intersection checks for the paddle and bricks, then reflects the ball using the collision normal. Paddle hits also adjust the outgoing angle based on where the ball lands on the paddle, which gives the player more control over the next shot.
 
-`StdDraw` is provided by Princeton's Algorithms library: https://algs4.cs.princeton.edu/code/
-
-## Suggested Repository Name
-
-Recommended: `bounce-break-java`
-
-Other solid options:
-
-- `brick-breaker-java`
-- `java-arcade-breakout`
-- `std-draw-brick-breaker`
-
-## License
-
-This project is available under the MIT License.
